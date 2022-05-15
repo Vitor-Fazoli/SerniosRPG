@@ -52,14 +52,6 @@ namespace Sernios
         {
             labelControlnteligence.Text = InteligenceTrackBar.Value.ToString();
         }
-        private void MessageProblem()
-        {
-            AtributesSum = VitalityTrackBar.Value + MetabolsimTrackBar.Value + InteligenceTrackBar.Value;
-
-            labelPointsNeg.Visible = true;
-            labelTextNeg.Visible = true;
-            labelPointsNeg.Text = Math.Abs(AtributesSum - 75).ToString();
-        }
         private void UpdateData_Tick(object sender, EventArgs e)
         {
             AtributesSum = VitalityTrackBar.Value + MetabolsimTrackBar.Value + InteligenceTrackBar.Value;
@@ -79,13 +71,15 @@ namespace Sernios
         private void checkboxListPlagues_ItemCheck(object sender, ItemCheckEventArgs e)
         {
             for (int ix = 0; ix < checkboxListPlagues.Items.Count; ++ix)
-                if (ix != e.Index) checkboxListPlagues.SetItemChecked(ix, false);
+                if (ix != e.Index)
+                    checkboxListPlagues.SetItemChecked(ix, false);
         }
 
         private void checkedListBox2_ItemCheck(object sender, ItemCheckEventArgs e)
         {
             for (int ix = 0; ix < checkedListBox2.Items.Count; ++ix)
-                if (ix != e.Index) checkedListBox2.SetItemChecked(ix, false);
+                if (ix != e.Index)
+                    checkedListBox2.SetItemChecked(ix, false);
         }
 
         private void labelInteligenceShow_MouseHover(object sender, EventArgs e)
@@ -108,6 +102,37 @@ namespace Sernios
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
+            AtributesSum = VitalityTrackBar.Value + MetabolsimTrackBar.Value + InteligenceTrackBar.Value;
+            if (AtributesSum != 75)
+            {
+                MessageBox.Show("your attributes are not valid");
+                return;
+            }
+            if (checkboxListPlagues.CheckedItems.Count == 0)
+            {
+                MessageBox.Show("your plague checkbox is empty");
+                return;
+            }
+
+            if (checkedListBox2.CheckedItems.Count == 0)
+            {
+                MessageBox.Show("your ancestor checkbox is empty");
+                return;
+            }
+
+            if (textBox1.Text.Length <= 0)
+            {
+                MessageBox.Show("your name box is empty");
+                return;
+            }
+
+            if (comboBoxClass.Text.Length <= 0)
+            {
+                MessageBox.Show("your Class box is empty");
+                return;
+            }
+
+
             Character.VITALITY = int.Parse(labelControlVitality.Text);
             Character.METABOLSIM = int.Parse(labelControlMetabolism.Text);
             Character.INTELLIGENCE = int.Parse(labelControlnteligence.Text);
@@ -121,15 +146,14 @@ namespace Sernios
 
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "Arquivos de texto (*.txt)|*.txt";
-            saveFileDialog.ShowDialog();
-            
 
-
-            MessageBox.Show(Character.ToString());
-
-            TextWriter txt = new StreamWriter(saveFileDialog.FileName);
-            txt.Write(Character.ToString());
-            txt.Close();
+            if (saveFileDialog.ShowDialog() != DialogResult.Cancel)
+            {
+                TextWriter txt = new StreamWriter(saveFileDialog.FileName);
+                txt.Write(Character.ToString());
+                MessageBox.Show("Saved successfully");
+                txt.Close();
+            }
         }
         private void labelHelpClass_Click(object sender, EventArgs e)
         {

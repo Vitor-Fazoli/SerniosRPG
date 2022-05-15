@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\hp\\.nuget\\packages\\": {}
+    "C:\\Users\\fazol\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\source\\repos\\Sernios\\Sernios\\Sernios.csproj",
+      "projectUniqueName": "D:\\Programas\\SerniosRPG\\Sernios\\Sernios.csproj",
       "projectName": "Sernios",
-      "projectPath": "C:\\Users\\hp\\source\\repos\\Sernios\\Sernios\\Sernios.csproj",
-      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\source\\repos\\Sernios\\Sernios\\obj\\",
+      "projectPath": "D:\\Programas\\SerniosRPG\\Sernios\\Sernios.csproj",
+      "packagesPath": "C:\\Users\\fazol\\.nuget\\packages\\",
+      "outputPath": "D:\\Programas\\SerniosRPG\\Sernios\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fazol\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
