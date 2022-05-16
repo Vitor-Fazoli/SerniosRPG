@@ -79,11 +79,11 @@
             // 
             labelName.Anchor = System.Windows.Forms.AnchorStyles.None;
             labelName.AutoSize = true;
-            labelName.Font = new System.Drawing.Font("Niagara Solid", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             labelName.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             labelName.Location = new System.Drawing.Point(11, 9);
             labelName.Name = "labelName";
-            labelName.Size = new System.Drawing.Size(153, 103);
+            labelName.Size = new System.Drawing.Size(253, 108);
             labelName.TabIndex = 3;
             labelName.Text = "teste";
             // 
@@ -91,11 +91,11 @@
             // 
             label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Niagara Solid", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             label1.Location = new System.Drawing.Point(11, 112);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(97, 51);
+            label1.Size = new System.Drawing.Size(184, 55);
             label1.TabIndex = 4;
             label1.Text = "Classe:";
             // 
@@ -103,11 +103,11 @@
             // 
             label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             label2.AutoSize = true;
-            label2.Font = new System.Drawing.Font("Niagara Solid", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             label2.Location = new System.Drawing.Point(623, 9);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(76, 51);
+            label2.Size = new System.Drawing.Size(130, 55);
             label2.TabIndex = 5;
             label2.Text = "Nivel";
             // 
@@ -115,11 +115,11 @@
             // 
             labelClass.Anchor = System.Windows.Forms.AnchorStyles.None;
             labelClass.AutoSize = true;
-            labelClass.Font = new System.Drawing.Font("Niagara Solid", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            labelClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             labelClass.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             labelClass.Location = new System.Drawing.Point(101, 112);
             labelClass.Name = "labelClass";
-            labelClass.Size = new System.Drawing.Size(78, 51);
+            labelClass.Size = new System.Drawing.Size(128, 55);
             labelClass.TabIndex = 7;
             labelClass.Text = "teste";
             // 
@@ -127,11 +127,11 @@
             // 
             label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             label3.AutoSize = true;
-            label3.Font = new System.Drawing.Font("Niagara Solid", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             label3.Location = new System.Drawing.Point(524, 291);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(243, 51);
+            label3.Size = new System.Drawing.Size(465, 55);
             label3.TabIndex = 8;
             label3.Text = "Atributos Avançados";
             // 
@@ -139,11 +139,11 @@
             // 
             label23.Anchor = System.Windows.Forms.AnchorStyles.None;
             label23.AutoSize = true;
-            label23.Font = new System.Drawing.Font("Niagara Solid", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             label23.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             label23.Location = new System.Drawing.Point(524, 143);
             label23.Name = "label23";
-            label23.Size = new System.Drawing.Size(241, 51);
+            label23.Size = new System.Drawing.Size(433, 55);
             label23.TabIndex = 29;
             label23.Text = "Atributos Principais";
             // 
@@ -151,11 +151,11 @@
             // 
             label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             label11.AutoSize = true;
-            label11.Font = new System.Drawing.Font("Niagara Solid", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             label11.Location = new System.Drawing.Point(21, 346);
             label11.Name = "label11";
-            label11.Size = new System.Drawing.Size(110, 51);
+            label11.Size = new System.Drawing.Size(186, 55);
             label11.TabIndex = 40;
             label11.Text = "História";
             label11.Click += new System.EventHandler(this.label11_Click);
@@ -164,11 +164,11 @@
             // 
             this.Level.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Level.AutoSize = true;
-            this.Level.Font = new System.Drawing.Font("Niagara Solid", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Level.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Level.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Level.Location = new System.Drawing.Point(691, 9);
             this.Level.Name = "Level";
-            this.Level.Size = new System.Drawing.Size(30, 51);
+            this.Level.Size = new System.Drawing.Size(51, 55);
             this.Level.TabIndex = 6;
             this.Level.Text = "1";
             // 
@@ -319,9 +319,9 @@
             this.ResistenceGet.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ResistenceGet.Location = new System.Drawing.Point(695, 376);
             this.ResistenceGet.Name = "ResistenceGet";
-            this.ResistenceGet.Size = new System.Drawing.Size(14, 15);
+            this.ResistenceGet.Size = new System.Drawing.Size(21, 15);
             this.ResistenceGet.TabIndex = 23;
-            this.ResistenceGet.Text = Character.Resistence.ToString();
+            this.ResistenceGet.Text = "25";
             // 
             // VitalityGet
             // 
@@ -329,9 +329,9 @@
             this.VitalityGet.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.VitalityGet.Location = new System.Drawing.Point(695, 351);
             this.VitalityGet.Name = "VitalityGet";
-            this.VitalityGet.Size = new System.Drawing.Size(14, 15);
+            this.VitalityGet.Size = new System.Drawing.Size(21, 15);
             this.VitalityGet.TabIndex = 24;
-            this.VitalityGet.Text = Character.VITALITY.ToString();
+            this.VitalityGet.Text = "25";
             // 
             // VelocityGet
             // 
@@ -339,9 +339,9 @@
             this.VelocityGet.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.VelocityGet.Location = new System.Drawing.Point(695, 405);
             this.VelocityGet.Name = "VelocityGet";
-            this.VelocityGet.Size = new System.Drawing.Size(14, 15);
+            this.VelocityGet.Size = new System.Drawing.Size(21, 15);
             this.VelocityGet.TabIndex = 26;
-            this.VelocityGet.Text = Character.Initiative.ToString();
+            this.VelocityGet.Text = "25";
             // 
             // TechGet
             // 
@@ -349,9 +349,9 @@
             this.TechGet.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TechGet.Location = new System.Drawing.Point(695, 430);
             this.TechGet.Name = "TechGet";
-            this.TechGet.Size = new System.Drawing.Size(14, 15);
+            this.TechGet.Size = new System.Drawing.Size(21, 15);
             this.TechGet.TabIndex = 25;
-            this.TechGet.Text = Character.Technique.ToString();
+            this.TechGet.Text = "25";
             // 
             // StrengthGet
             // 
