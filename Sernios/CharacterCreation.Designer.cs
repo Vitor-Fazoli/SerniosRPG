@@ -37,7 +37,7 @@
             this.InteligenceTrackBar = new System.Windows.Forms.TrackBar();
             this.MetabolsimTrackBar = new System.Windows.Forms.TrackBar();
             this.labelPlagueTitle = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.labelInteligenceShow = new System.Windows.Forms.Label();
             this.labelMetabolismShow = new System.Windows.Forms.Label();
@@ -50,7 +50,7 @@
             this.labelPointsAtr = new System.Windows.Forms.Label();
             this.UpdateData = new System.Windows.Forms.Timer(this.components);
             this.checkboxListPlagues = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.checkedBoxAncestor = new System.Windows.Forms.CheckedListBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SaveButton = new System.Windows.Forms.Button();
@@ -135,14 +135,14 @@
             this.labelPlagueTitle.TabIndex = 12;
             this.labelPlagueTitle.Text = "Infecção";
             // 
-            // textBox1
+            // textBoxName
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(52, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 17;
+            this.textBoxName.BackColor = System.Drawing.SystemColors.Window;
+            this.textBoxName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxName.Location = new System.Drawing.Point(52, 12);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(100, 23);
+            this.textBoxName.TabIndex = 17;
             // 
             // textBox2
             // 
@@ -192,7 +192,7 @@
             this.ResetButton.TabIndex = 22;
             this.ResetButton.Text = "Resetar";
             this.ResetButton.UseVisualStyleBackColor = true;
-            this.ResetButton.Click += new System.EventHandler(this.button1_Click);
+            this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
             // 
             // labelControlVitality
             // 
@@ -261,22 +261,22 @@
             this.checkboxListPlagues.TabIndex = 28;
             this.checkboxListPlagues.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkboxListPlagues_ItemCheck);
             // 
-            // checkedListBox2
+            // checkedBoxAncestor
             // 
-            this.checkedListBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.checkedListBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.checkedListBox2.CheckOnClick = true;
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Items.AddRange(new object[] {
+            this.checkedBoxAncestor.BackColor = System.Drawing.SystemColors.Window;
+            this.checkedBoxAncestor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.checkedBoxAncestor.CheckOnClick = true;
+            this.checkedBoxAncestor.FormattingEnabled = true;
+            this.checkedBoxAncestor.Items.AddRange(new object[] {
             "Nascido nas ruas",
             "O poder da alta patente",
             "Vivência de um orfão",
             "Trabalhando desde muito cedo"});
-            this.checkedListBox2.Location = new System.Drawing.Point(12, 122);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(192, 74);
-            this.checkedListBox2.TabIndex = 29;
-            this.checkedListBox2.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListBox2_ItemCheck);
+            this.checkedBoxAncestor.Location = new System.Drawing.Point(12, 122);
+            this.checkedBoxAncestor.Name = "checkedBoxAncestor";
+            this.checkedBoxAncestor.Size = new System.Drawing.Size(192, 74);
+            this.checkedBoxAncestor.TabIndex = 29;
+            this.checkedBoxAncestor.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.CheckedBoxAncestor_ItemCheck);
             // 
             // panel1
             // 
@@ -359,10 +359,10 @@
             this.Controls.Add(this.comboBoxClass);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.checkedListBox2);
+            this.Controls.Add(this.checkedBoxAncestor);
             this.Controls.Add(this.checkboxListPlagues);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelPlagueTitle);
             this.Controls.Add(this.labelAncestorTitle);
             this.Controls.Add(this.labelLoreTitle);
@@ -389,7 +389,7 @@
         private Label labelAncestorTitle;
         private Label label5;
         private Label labelPlagueTitle;
-        private TextBox textBox1;
+        private TextBox textBoxName;
         private TextBox textBox2;
         private Label labelInteligenceShow;
         private Label labelMetabolismShow;
@@ -404,12 +404,10 @@
         private Label label9;
         private Label labelPointsAtr;
         protected System.Windows.Forms.Timer UpdateData;
-        private CheckedListBox checkedListBox2;
+        private CheckedListBox checkedBoxAncestor;
         protected CheckedListBox checkboxListPlagues;
         private Panel panel1;
         private ToolTip toolTip1;
-        private Label labelPointsNeg;
-        private Label labelTextNeg;
         private Button SaveButton;
         private ComboBox comboBoxClass;
         private Label labelClassTitle;

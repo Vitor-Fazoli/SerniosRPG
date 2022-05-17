@@ -34,24 +34,24 @@
             this.habilidadesIniciaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.períciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bispoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exPilotoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.policialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.religiosoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.andarilhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mongeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.labelHab = new System.Windows.Forms.Label();
             this.habilidadesIniciaisToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.períciasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exPilotoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.habilidadesIniciaisToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.períciasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.policialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.habilidadesIniciaisToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.períciasToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.religiosoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.habilidadesIniciaisToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.períciasToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.andarilhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.habilidadesIniciaisToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.períciasToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mongeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.habilidadesIniciaisToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.períciasToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.labelHab = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,14 +92,14 @@
             // habilidadesIniciaisToolStripMenuItem
             // 
             this.habilidadesIniciaisToolStripMenuItem.Name = "habilidadesIniciaisToolStripMenuItem";
-            this.habilidadesIniciaisToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.habilidadesIniciaisToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.habilidadesIniciaisToolStripMenuItem.Text = "Habilidades Iniciais";
             this.habilidadesIniciaisToolStripMenuItem.Click += new System.EventHandler(this.habilidadesIniciaisToolStripMenuItem_Click);
             // 
             // períciasToolStripMenuItem
             // 
             this.períciasToolStripMenuItem.Name = "períciasToolStripMenuItem";
-            this.períciasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.períciasToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.períciasToolStripMenuItem.Text = "Perícias";
             this.períciasToolStripMenuItem.Click += new System.EventHandler(this.períciasToolStripMenuItem_Click);
             // 
@@ -112,6 +112,20 @@
             this.bispoToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.bispoToolStripMenuItem.Text = "Bispo";
             // 
+            // habilidadesIniciaisToolStripMenuItem1
+            // 
+            this.habilidadesIniciaisToolStripMenuItem1.Name = "habilidadesIniciaisToolStripMenuItem1";
+            this.habilidadesIniciaisToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.habilidadesIniciaisToolStripMenuItem1.Text = "Habilidades Iniciais";
+            this.habilidadesIniciaisToolStripMenuItem1.Click += new System.EventHandler(this.habilidadesIniciaisToolStripMenuItem1_Click);
+            // 
+            // períciasToolStripMenuItem1
+            // 
+            this.períciasToolStripMenuItem1.Name = "períciasToolStripMenuItem1";
+            this.períciasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.períciasToolStripMenuItem1.Text = "Perícias";
+            this.períciasToolStripMenuItem1.Click += new System.EventHandler(this.períciasToolStripMenuItem1_Click);
+            // 
             // exPilotoToolStripMenuItem
             // 
             this.exPilotoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -120,6 +134,20 @@
             this.exPilotoToolStripMenuItem.Name = "exPilotoToolStripMenuItem";
             this.exPilotoToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.exPilotoToolStripMenuItem.Text = "Ex-Piloto";
+            // 
+            // habilidadesIniciaisToolStripMenuItem2
+            // 
+            this.habilidadesIniciaisToolStripMenuItem2.Name = "habilidadesIniciaisToolStripMenuItem2";
+            this.habilidadesIniciaisToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.habilidadesIniciaisToolStripMenuItem2.Text = "Habilidades Iniciais";
+            this.habilidadesIniciaisToolStripMenuItem2.Click += new System.EventHandler(this.habilidadesIniciaisToolStripMenuItem2_Click);
+            // 
+            // períciasToolStripMenuItem2
+            // 
+            this.períciasToolStripMenuItem2.Name = "períciasToolStripMenuItem2";
+            this.períciasToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.períciasToolStripMenuItem2.Text = "Perícias";
+            this.períciasToolStripMenuItem2.Click += new System.EventHandler(this.períciasToolStripMenuItem2_Click);
             // 
             // policialToolStripMenuItem
             // 
@@ -130,6 +158,20 @@
             this.policialToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.policialToolStripMenuItem.Text = "Policial";
             // 
+            // habilidadesIniciaisToolStripMenuItem3
+            // 
+            this.habilidadesIniciaisToolStripMenuItem3.Name = "habilidadesIniciaisToolStripMenuItem3";
+            this.habilidadesIniciaisToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.habilidadesIniciaisToolStripMenuItem3.Text = "Habilidades Iniciais";
+            this.habilidadesIniciaisToolStripMenuItem3.Click += new System.EventHandler(this.habilidadesIniciaisToolStripMenuItem3_Click);
+            // 
+            // períciasToolStripMenuItem3
+            // 
+            this.períciasToolStripMenuItem3.Name = "períciasToolStripMenuItem3";
+            this.períciasToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.períciasToolStripMenuItem3.Text = "Perícias";
+            this.períciasToolStripMenuItem3.Click += new System.EventHandler(this.períciasToolStripMenuItem3_Click);
+            // 
             // religiosoToolStripMenuItem
             // 
             this.religiosoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -138,6 +180,20 @@
             this.religiosoToolStripMenuItem.Name = "religiosoToolStripMenuItem";
             this.religiosoToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.religiosoToolStripMenuItem.Text = "Religioso";
+            // 
+            // habilidadesIniciaisToolStripMenuItem4
+            // 
+            this.habilidadesIniciaisToolStripMenuItem4.Name = "habilidadesIniciaisToolStripMenuItem4";
+            this.habilidadesIniciaisToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.habilidadesIniciaisToolStripMenuItem4.Text = "Habilidades Iniciais";
+            this.habilidadesIniciaisToolStripMenuItem4.Click += new System.EventHandler(this.habilidadesIniciaisToolStripMenuItem4_Click);
+            // 
+            // períciasToolStripMenuItem4
+            // 
+            this.períciasToolStripMenuItem4.Name = "períciasToolStripMenuItem4";
+            this.períciasToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.períciasToolStripMenuItem4.Text = "Perícias";
+            this.períciasToolStripMenuItem4.Click += new System.EventHandler(this.períciasToolStripMenuItem4_Click);
             // 
             // andarilhoToolStripMenuItem
             // 
@@ -148,6 +204,20 @@
             this.andarilhoToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.andarilhoToolStripMenuItem.Text = "Andarilho";
             // 
+            // habilidadesIniciaisToolStripMenuItem5
+            // 
+            this.habilidadesIniciaisToolStripMenuItem5.Name = "habilidadesIniciaisToolStripMenuItem5";
+            this.habilidadesIniciaisToolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.habilidadesIniciaisToolStripMenuItem5.Text = "Habilidades Iniciais";
+            this.habilidadesIniciaisToolStripMenuItem5.Click += new System.EventHandler(this.habilidadesIniciaisToolStripMenuItem5_Click);
+            // 
+            // períciasToolStripMenuItem5
+            // 
+            this.períciasToolStripMenuItem5.Name = "períciasToolStripMenuItem5";
+            this.períciasToolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
+            this.períciasToolStripMenuItem5.Text = "Perícias";
+            this.períciasToolStripMenuItem5.Click += new System.EventHandler(this.períciasToolStripMenuItem5_Click);
+            // 
             // mongeToolStripMenuItem
             // 
             this.mongeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -156,6 +226,20 @@
             this.mongeToolStripMenuItem.Name = "mongeToolStripMenuItem";
             this.mongeToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.mongeToolStripMenuItem.Text = "Monge";
+            // 
+            // habilidadesIniciaisToolStripMenuItem6
+            // 
+            this.habilidadesIniciaisToolStripMenuItem6.Name = "habilidadesIniciaisToolStripMenuItem6";
+            this.habilidadesIniciaisToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
+            this.habilidadesIniciaisToolStripMenuItem6.Text = "Habilidades Iniciais";
+            this.habilidadesIniciaisToolStripMenuItem6.Click += new System.EventHandler(this.habilidadesIniciaisToolStripMenuItem6_Click);
+            // 
+            // períciasToolStripMenuItem6
+            // 
+            this.períciasToolStripMenuItem6.Name = "períciasToolStripMenuItem6";
+            this.períciasToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
+            this.períciasToolStripMenuItem6.Text = "Perícias";
+            this.períciasToolStripMenuItem6.Click += new System.EventHandler(this.períciasToolStripMenuItem6_Click);
             // 
             // labelHab
             // 
@@ -166,78 +250,6 @@
             this.labelHab.Name = "labelHab";
             this.labelHab.Size = new System.Drawing.Size(2, 23);
             this.labelHab.TabIndex = 3;
-            // 
-            // habilidadesIniciaisToolStripMenuItem1
-            // 
-            this.habilidadesIniciaisToolStripMenuItem1.Name = "habilidadesIniciaisToolStripMenuItem1";
-            this.habilidadesIniciaisToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.habilidadesIniciaisToolStripMenuItem1.Text = "Habilidades Iniciais";
-            // 
-            // períciasToolStripMenuItem1
-            // 
-            this.períciasToolStripMenuItem1.Name = "períciasToolStripMenuItem1";
-            this.períciasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.períciasToolStripMenuItem1.Text = "Perícias";
-            // 
-            // habilidadesIniciaisToolStripMenuItem2
-            // 
-            this.habilidadesIniciaisToolStripMenuItem2.Name = "habilidadesIniciaisToolStripMenuItem2";
-            this.habilidadesIniciaisToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.habilidadesIniciaisToolStripMenuItem2.Text = "Habilidades Iniciais";
-            // 
-            // períciasToolStripMenuItem2
-            // 
-            this.períciasToolStripMenuItem2.Name = "períciasToolStripMenuItem2";
-            this.períciasToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.períciasToolStripMenuItem2.Text = "Perícias";
-            // 
-            // habilidadesIniciaisToolStripMenuItem3
-            // 
-            this.habilidadesIniciaisToolStripMenuItem3.Name = "habilidadesIniciaisToolStripMenuItem3";
-            this.habilidadesIniciaisToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.habilidadesIniciaisToolStripMenuItem3.Text = "Habilidades Iniciais";
-            // 
-            // períciasToolStripMenuItem3
-            // 
-            this.períciasToolStripMenuItem3.Name = "períciasToolStripMenuItem3";
-            this.períciasToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.períciasToolStripMenuItem3.Text = "Perícias";
-            // 
-            // habilidadesIniciaisToolStripMenuItem4
-            // 
-            this.habilidadesIniciaisToolStripMenuItem4.Name = "habilidadesIniciaisToolStripMenuItem4";
-            this.habilidadesIniciaisToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
-            this.habilidadesIniciaisToolStripMenuItem4.Text = "Habilidades Iniciais";
-            // 
-            // períciasToolStripMenuItem4
-            // 
-            this.períciasToolStripMenuItem4.Name = "períciasToolStripMenuItem4";
-            this.períciasToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
-            this.períciasToolStripMenuItem4.Text = "Perícias";
-            // 
-            // habilidadesIniciaisToolStripMenuItem5
-            // 
-            this.habilidadesIniciaisToolStripMenuItem5.Name = "habilidadesIniciaisToolStripMenuItem5";
-            this.habilidadesIniciaisToolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
-            this.habilidadesIniciaisToolStripMenuItem5.Text = "Habilidades Iniciais";
-            // 
-            // períciasToolStripMenuItem5
-            // 
-            this.períciasToolStripMenuItem5.Name = "períciasToolStripMenuItem5";
-            this.períciasToolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
-            this.períciasToolStripMenuItem5.Text = "Perícias";
-            // 
-            // habilidadesIniciaisToolStripMenuItem6
-            // 
-            this.habilidadesIniciaisToolStripMenuItem6.Name = "habilidadesIniciaisToolStripMenuItem6";
-            this.habilidadesIniciaisToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
-            this.habilidadesIniciaisToolStripMenuItem6.Text = "Habilidades Iniciais";
-            // 
-            // períciasToolStripMenuItem6
-            // 
-            this.períciasToolStripMenuItem6.Name = "períciasToolStripMenuItem6";
-            this.períciasToolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
-            this.períciasToolStripMenuItem6.Text = "Perícias";
             // 
             // ClassHelper
             // 

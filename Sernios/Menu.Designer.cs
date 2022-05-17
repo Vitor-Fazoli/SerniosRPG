@@ -28,54 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Label labelTitle;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            this.buttonOpenCharacter = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.buttonNewCharacter = new System.Windows.Forms.Button();
-            labelTitle = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelTitle
+            // buttonExit
             // 
-            resources.ApplyResources(labelTitle, "labelTitle");
-            labelTitle.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            labelTitle.Name = "labelTitle";
-            labelTitle.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // buttonOpenCharacter
-            // 
-            resources.ApplyResources(this.buttonOpenCharacter, "buttonOpenCharacter");
-            this.buttonOpenCharacter.Name = "buttonOpenCharacter";
-            this.buttonOpenCharacter.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.buttonExit, "buttonExit");
+            this.buttonExit.BackColor = System.Drawing.SystemColors.WindowText;
+            this.buttonExit.FlatAppearance.BorderSize = 0;
+            this.buttonExit.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // buttonNewCharacter
             // 
             resources.ApplyResources(this.buttonNewCharacter, "buttonNewCharacter");
+            this.buttonNewCharacter.BackColor = System.Drawing.SystemColors.WindowText;
+            this.buttonNewCharacter.FlatAppearance.BorderColor = System.Drawing.SystemColors.WindowText;
+            this.buttonNewCharacter.FlatAppearance.BorderSize = 0;
+            this.buttonNewCharacter.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonNewCharacter.Name = "buttonNewCharacter";
-            this.buttonNewCharacter.UseVisualStyleBackColor = true;
+            this.buttonNewCharacter.UseVisualStyleBackColor = false;
             this.buttonNewCharacter.Click += new System.EventHandler(this.buttonNewCharacter_Click);
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.BackColor = System.Drawing.SystemColors.WindowText;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.buttonOpenCharacter_Click);
             // 
             // Menu
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackColor = System.Drawing.SystemColors.WindowText;
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonNewCharacter);
-            this.Controls.Add(this.buttonOpenCharacter);
-            this.Controls.Add(labelTitle);
+            this.Controls.Add(this.buttonExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Menu";
-            this.ShowIcon = false;
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Button buttonOpenCharacter;
+        private Button buttonExit;
         private Button buttonNewCharacter;
+        private PictureBox pictureBox1;
+        private Button button1;
     }
 }

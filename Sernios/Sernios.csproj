@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <Folder Include="Characters\" />
+    <Folder Include="Assets\" />
   </ItemGroup>
 
 </Project>

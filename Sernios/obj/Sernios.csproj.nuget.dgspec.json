@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programas\\SerniosRPG\\Sernios\\Sernios.csproj": {}
+    "C:\\Users\\hp\\source\\repos\\SerniosRPG\\Sernios\\Sernios.csproj": {}
   },
   "projects": {
-    "D:\\Programas\\SerniosRPG\\Sernios\\Sernios.csproj": {
+    "C:\\Users\\hp\\source\\repos\\SerniosRPG\\Sernios\\Sernios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programas\\SerniosRPG\\Sernios\\Sernios.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\source\\repos\\SerniosRPG\\Sernios\\Sernios.csproj",
         "projectName": "Sernios",
-        "projectPath": "D:\\Programas\\SerniosRPG\\Sernios\\Sernios.csproj",
-        "packagesPath": "C:\\Users\\fazol\\.nuget\\packages\\",
-        "outputPath": "D:\\Programas\\SerniosRPG\\Sernios\\obj\\",
+        "projectPath": "C:\\Users\\hp\\source\\repos\\SerniosRPG\\Sernios\\Sernios.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\source\\repos\\SerniosRPG\\Sernios\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fazol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

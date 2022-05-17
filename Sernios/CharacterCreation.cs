@@ -13,29 +13,26 @@ namespace Sernios
     public partial class CharacterCreation : Form
     {
         private int AtributesSum;
+
+        private int Points = 75;
         public CharacterCreation()
         {
             InitializeComponent();
 
-            labelPointsAtr.Text = "75";
+            labelPointsAtr.Text = Points.ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ResetButton_Click(object sender, EventArgs e)
         {
             InteligenceTrackBar.Value = 0;
             VitalityTrackBar.Value = 0;
             MetabolsimTrackBar.Value = 0;
-
             InteligenceTrackBar.Enabled = true;
             VitalityTrackBar.Enabled = true;
             MetabolsimTrackBar.Enabled = true;
-
             labelControlMetabolism.Text = "0";
             labelControlnteligence.Text = "0";
             labelControlVitality.Text = "0";
-
-            labelPointsNeg.Visible = false;
-            labelTextNeg.Visible = false;
         }
 
         private void VitalityTrackBar_Scroll(object sender, EventArgs e)
@@ -52,11 +49,12 @@ namespace Sernios
         {
             labelControlnteligence.Text = InteligenceTrackBar.Value.ToString();
         }
+
         private void UpdateData_Tick(object sender, EventArgs e)
         {
             AtributesSum = VitalityTrackBar.Value + MetabolsimTrackBar.Value + InteligenceTrackBar.Value;
 
-            labelPointsAtr.Text = (75 - AtributesSum).ToString();
+            labelPointsAtr.Text = (Points - AtributesSum).ToString();
 
             if (int.Parse(labelPointsAtr.Text) < 0)
             {
@@ -75,11 +73,11 @@ namespace Sernios
                     checkboxListPlagues.SetItemChecked(ix, false);
         }
 
-        private void checkedListBox2_ItemCheck(object sender, ItemCheckEventArgs e)
+        private void CheckedBoxAncestor_ItemCheck(object sender, ItemCheckEventArgs e)
         {
-            for (int ix = 0; ix < checkedListBox2.Items.Count; ++ix)
+            for (int ix = 0; ix < checkedBoxAncestor.Items.Count; ++ix)
                 if (ix != e.Index)
-                    checkedListBox2.SetItemChecked(ix, false);
+                    checkedBoxAncestor.SetItemChecked(ix, false);
         }
 
         private void labelInteligenceShow_MouseHover(object sender, EventArgs e)
@@ -99,8 +97,7 @@ namespace Sernios
             toolTip1.Show("Aumenta sua sáude e seu esforço:\n" +
                 "◉ Esforço são os pontos que te dizem quantas ações você pode realizar por turno", labelVitalityShow);
         }
-
-        private void SaveButton_Click(object sender, EventArgs e)
+        private void CheckError()
         {
             AtributesSum = VitalityTrackBar.Value + MetabolsimTrackBar.Value + InteligenceTrackBar.Value;
             if (AtributesSum != 75)
@@ -114,15 +111,15 @@ namespace Sernios
                 return;
             }
 
-            if (checkedListBox2.CheckedItems.Count == 0)
+            if (checkedBoxAncestor.CheckedItems.Count == 0)
             {
                 MessageBox.Show("your ancestor checkbox is empty");
                 return;
             }
 
-            if (textBox1.Text.Length <= 0)
+            if (textBoxName.Text.Length <= 0)
             {
-                MessageBox.Show("your name box is empty");
+                MessageBox.Show("your Name box is empty");
                 return;
             }
 
@@ -131,17 +128,20 @@ namespace Sernios
                 MessageBox.Show("your Class box is empty");
                 return;
             }
-
+        }
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            CheckError();
 
             Character.VITALITY = int.Parse(labelControlVitality.Text);
             Character.METABOLSIM = int.Parse(labelControlMetabolism.Text);
             Character.INTELLIGENCE = int.Parse(labelControlnteligence.Text);
 
-            Character.Name = textBox1.Text;
+            Character.Name = textBoxName.Text;
             Character.Class = comboBoxClass.Text;
             Character.Lore = textBox2.Text;
 
-            Character.Ancestor = checkedListBox2.SelectedIndex;
+            Character.Ancestor = checkedBoxAncestor.SelectedIndex;
             Character.Plague = checkboxListPlagues.SelectedIndex;
 
             SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -150,7 +150,7 @@ namespace Sernios
             if (saveFileDialog.ShowDialog() != DialogResult.Cancel)
             {
                 TextWriter txt = new StreamWriter(saveFileDialog.FileName);
-                txt.Write(Character.ToString());
+                txt.Write(Character.Str());
                 MessageBox.Show("Saved successfully");
                 txt.Close();
             }

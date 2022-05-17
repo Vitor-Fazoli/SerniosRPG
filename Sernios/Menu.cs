@@ -22,5 +22,15 @@ namespace Sernios
 
             creation.Show();
         }
+
+        private void buttonOpenCharacter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
