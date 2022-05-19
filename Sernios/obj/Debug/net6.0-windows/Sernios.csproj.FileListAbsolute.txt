@@ -73,3 +73,4 @@ C:\Users\hp\source\repos\SerniosRPG\Sernios\bin\Debug\net6.0-windows\pt-BR\Serni
 C:\Users\hp\source\repos\SerniosRPG\Sernios\obj\Debug\net6.0-windows\pt-BR\Sernios.resources.dll
 C:\Users\hp\source\repos\SerniosRPG\Sernios\obj\Debug\net6.0-windows\Sernios.genruntimeconfig.cache
 C:\Users\hp\source\repos\SerniosRPG\Sernios\obj\Debug\net6.0-windows\ref\Sernios.dll
+C:\Users\hp\source\repos\SerniosRPG\Sernios\obj\Debug\net6.0-windows\Sernios.Combat.resources

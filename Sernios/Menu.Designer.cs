@@ -82,6 +82,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonNewCharacter);
             this.Controls.Add(this.buttonExit);
+            this.ForeColor = System.Drawing.SystemColors.WindowText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Menu";
